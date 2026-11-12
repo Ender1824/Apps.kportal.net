@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kportal Apps</title>
+  <meta name="description" content="iPhone apps by Kportal: Universe Daily, Forked and Frutiger Sports.">
+  <link rel="icon" href="assets/universe-daily.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">Kportal</a>
+    <nav>
+      <a href="#universe-daily">Universe Daily</a>
+      <a href="#forked">Forked</a>
+      <a href="#frutiger-sports">Frutiger Sports</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Apps for iPhone</p>
+      <h1>Small apps, made with care.</h1>
+      <p class="lede">I design and build iOS apps on my own. Here's what I've made so far: one out on the App Store, two on the way.</p>
+    </section>
+
+    <section class="apps">
+      <!-- Universe Daily -->
+      <article class="app app--space" id="universe-daily">
+        <div class="app__media">
+          <img class="app__icon" src="assets/universe-daily.png" alt="Universe Daily app icon" width="512" height="512">
+        </div>
+        <div class="app__body">
+          <div class="app__meta">
+            <span class="status status--live">On the App Store</span>
+            <span class="tag">Astronomy</span>
+          </div>
+          <h2>Universe Daily</h2>
+          <p class="app__pitch">Your daily look at space: NASA's Astronomy Picture of the Day, live sky data and the latest space news, all in one place.</p>
+          <ul class="features">
+            <li>Astronomy Picture of the Day</li>
+            <li>Live ISS tracker and people in space</li>
+            <li>Upcoming launches and eclipses</li>
+            <li>Night sky conditions</li>
+            <li>Home Screen widget</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn--primary" href="https://apps.apple.com/us/app/universe-daily/id6751823874">Download on the App Store</a>
+            <a class="btn" href="https://www.space.kportal.net">Visit website</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Forked -->
+      <article class="app app--forked" id="forked">
+        <div class="app__media">
+          <img class="app__icon" src="assets/forked.png" alt="Forked app icon" width="256" height="256">
+        </div>
+        <div class="app__body">
+          <div class="app__meta">
+            <span class="status">Coming soon</span>
+            <span class="tag">Food &amp; Drink</span>
+          </div>
+          <h2>Forked</h2>
+          <p class="app__pitch">Swipe to decide where to eat, together. Start a group, everyone swipes the same deck of nearby restaurants or dishes, and when you all like the same one, it's a match.</p>
+          <ul class="features">
+            <li>Groups of 2–8 with a 4-character code</li>
+            <li>Swipe on restaurants or on cravings</li>
+            <li>Works phone-to-phone, no account or server</li>
+            <li>Hand-picked guide to 400+ Upper Valley spots</li>
+            <li>Directions, call and website for every match</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn--primary" href="https://www.forked.kportal.net">Visit website</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Frutiger Sports -->
+      <article class="app app--aero" id="frutiger-sports">
+        <div class="app__media">
+          <img class="app__icon" src="https://www.frutigersports.kportal.net/assets/icon-512.png" alt="Frutiger Sports app icon" width="512" height="512">
+        </div>
+        <div class="app__body">
+          <div class="app__meta">
+            <span class="status">Coming soon</span>
+            <span class="tag">Sports &amp; Games</span>
+          </div>
+          <h2>Frutiger Sports</h2>
+          <p class="app__pitch">Swing your phone, play the sport. Your iPhone becomes the paddle, the club, the ball and the bow, in a sunny, glossy Frutiger Aero world.</p>
+          <ul class="features">
+            <li>Table Tennis</li>
+            <li>Golf</li>
+            <li>Bowling</li>
+            <li>Archery</li>
+            <li>Play with friends nearby</li>
+            <li>Private by design</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn--primary" href="https://www.frutigersports.kportal.net">Visit website</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year">2026</span> Kportal</p>
+    <p><a href="https://www.space.kportal.net">space.kportal.net</a> · <a href="https://www.forked.kportal.net">forked.kportal.net</a> · <a href="https://www.frutigersports.kportal.net">frutigersports.kportal.net</a></p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
