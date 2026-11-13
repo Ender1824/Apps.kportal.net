@@ -11,9 +11,8 @@
   <meta name="theme-color" content="#0c0d10">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/logo-180.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,6 +23,7 @@
       </a>
       <nav aria-label="Primary">
         <a href="#apps">Apps</a>
+        <a href="#promise">Promise</a>
         <a href="#contact">Contact</a>
         <a class="nav__linkedin" href="https://www.linkedin.com/in/harrisonkiser/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
       </nav>
@@ -35,7 +35,7 @@
     <section class="hero wrap">
       <p class="eyebrow">Independent iOS developer</p>
       <h1>Thoughtful apps for iPhone,<br class="br-wide"> designed and built end&nbsp;to&nbsp;end.</h1>
-      <p class="lede">I make apps about space, food and play. One is on the App Store and two are on the way, each with its own look and its own idea of fun.</p>
+      <p class="lede">I make apps about space, food and play, each with its own look and its own idea of fun. None of them have subscriptions, ads or data collection. Ever.</p>
 
       <ul class="index" id="apps" aria-label="Apps">
         <li>
@@ -69,6 +69,23 @@
           </a>
         </li>
       </ul>
+    </section>
+
+    <!-- Promise -->
+    <section class="promise wrap" id="promise" aria-labelledby="promise-title">
+      <div class="promise__card reveal">
+        <p class="eyebrow">The Kportal promise</p>
+        <h2 id="promise-title"><span class="nowrap">No subscriptions.</span> <span class="nowrap">No data collection.</span> <span class="nowrap">No ads. <em>Ever.</em></span></h2>
+        <ul class="promise__list">
+          <li><svg class="promise__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div><strong>No subscriptions</strong><span>No monthly fees, no recurring charges, and no features locked behind a paywall.</span></div></li>
+          <li><svg class="promise__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div><strong>No data collection</strong><span>Nothing you do is collected, stored or sold. What happens in the app stays on your iPhone.</span></div></li>
+          <li><svg class="promise__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><div><strong>No ads</strong><span>No banners, no pop-ups, no ad networks and no tracking. Just the app.</span></div></li>
+        </ul>
+        <p class="promise__foot">This applies to every app I make, now and in the future. Read the privacy policies for
+          <a href="https://www.space.kportal.net/privacy.html">Universe Daily</a>,
+          <a href="https://www.forked.kportal.net/privacy.html">Forked</a> and
+          <a href="https://www.frutigersports.kportal.net/privacy/">Frutiger Sports</a>.</p>
+      </div>
     </section>
 
     <!-- Universe Daily -->
@@ -196,6 +213,7 @@
   </main>
 
   <footer class="foot wrap">
+    <p class="foot__promise">No subscriptions · No data collection · No ads</p>
     <p class="foot__brand"><img src="assets/logo.svg" alt="" width="20" height="20"><span>© <span id="year">2026</span> Kportal · <a href="https://www.linkedin.com/in/harrisonkiser/" target="_blank" rel="noopener">LinkedIn</a></span></p>
     <nav aria-label="App websites">
       <a href="https://www.space.kportal.net">space.kportal.net</a>
