@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kportal">
+  <defs>
+    <radialGradient id="kp-bg" cx="28%" cy="22%" r="95%">
+      <stop offset="0" stop-color="#2b2f86"/>
+      <stop offset="0.5" stop-color="#0c1033"/>
+      <stop offset="1" stop-color="#04050e"/>
+    </radialGradient>
+    <linearGradient id="kp-ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9a7bff"/>
+      <stop offset="0.35" stop-color="#3fb6ff"/>
+      <stop offset="0.68" stop-color="#7cdc5a"/>
+      <stop offset="1" stop-color="#ff9248"/>
+    </linearGradient>
+    <radialGradient id="kp-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8fa2ff" stop-opacity="0.7"/>
+      <stop offset="0.55" stop-color="#5b6cff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#5b6cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="kp-k" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d9e1ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="15" fill="url(#kp-bg)"/>
+
+  <!-- stars -->
+  <g fill="#fff">
+    <circle cx="9" cy="11" r="0.8" opacity="0.8"/>
+    <circle cx="53" cy="9" r="0.6" opacity="0.6"/>
+    <circle cx="57" cy="40" r="0.7" opacity="0.7"/>
+    <circle cx="7" cy="47" r="0.6" opacity="0.5"/>
+    <circle cx="14" cy="57" r="0.5" opacity="0.5"/>
+    <path d="M11 21.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z" opacity="0.95"/>
+  </g>
+
+  <g transform="rotate(-24 32 34)">
+    <!-- portal glow + back half of the ring -->
+    <ellipse cx="32" cy="34" rx="25" ry="10" fill="url(#kp-glow)"/>
+    <path d="M7 34a25 10 0 0 1 50 0" fill="none" stroke="url(#kp-ring)" stroke-width="3.2" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <!-- K -->
+  <g fill="url(#kp-k)">
+    <rect x="18" y="13" width="8" height="38" rx="1.6"/>
+    <path d="M26 26.5 38.6 13h9.6L26 36.8z"/>
+    <path d="M29.6 30.6 48.6 51h-9.7L24.6 35.6z"/>
+  </g>
+
+  <g transform="rotate(-24 32 34)">
+    <!-- front half of the ring passes in front of the K -->
+    <path d="M57 34a25 10 0 0 1-50 0" fill="none" stroke="url(#kp-ring)" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -9,8 +9,8 @@
   <meta property="og:description" content="Apps for iPhone about space, food and play: Universe Daily, Forked and Frutiger Sports.">
   <meta property="og:image" content="assets/screens/fs-home.jpg">
   <meta name="theme-color" content="#0c0d10">
-  <link rel="icon" href="assets/universe-daily.png">
-  <link rel="apple-touch-icon" href="assets/universe-daily.png">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,12 +20,12 @@
   <header class="top">
     <div class="wrap top__inner">
       <a class="brand" href="#top" aria-label="Kportal, back to top">
-        <span class="brand__mark" aria-hidden="true"></span>Kportal
+        <img class="brand__mark" src="assets/logo.svg" alt="" width="30" height="30">Kportal
       </a>
       <nav aria-label="Primary">
         <a href="#apps">Apps</a>
-        <a href="#approach">Approach</a>
         <a href="#contact">Contact</a>
+        <a class="nav__linkedin" href="https://www.linkedin.com/in/harrisonkiser/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
@@ -101,9 +101,9 @@
           </div>
         </div>
         <div class="phones reveal" aria-label="Universe Daily screenshots">
-          <figure class="phone phone--side phone--left"><img src="assets/screens/ud-explore.jpg" alt="Explore tab with People in Space, ISS Tracker, launches and eclipses" loading="lazy" width="600" height="1304"></figure>
-          <figure class="phone phone--side phone--right"><img src="assets/screens/ud-launches.jpg" alt="Launch calendar with a countdown to the next launch" loading="lazy" width="600" height="1304"></figure>
-          <figure class="phone phone--center"><img src="assets/screens/ud-today.jpg" alt="Today tab showing the Astronomy Picture of the Day" loading="lazy" width="600" height="1304"></figure>
+          <figure class="phone phone--side phone--left"><img src="assets/screens/ud-explore.jpg" alt="Explore tab with People in Space, ISS Tracker, launches and eclipses" loading="lazy" width="900" height="1956"></figure>
+          <figure class="phone phone--side phone--right"><img src="assets/screens/ud-launches.jpg" alt="Launch calendar with a countdown to the next launch" loading="lazy" width="900" height="1956"></figure>
+          <figure class="phone phone--center"><img src="assets/screens/ud-today.jpg" alt="Today tab showing the Astronomy Picture of the Day" loading="lazy" width="900" height="1956"></figure>
         </div>
       </div>
     </section>
@@ -137,9 +137,9 @@
           </div>
         </div>
         <div class="phones reveal" aria-label="Forked screenshots">
-          <figure class="phone phone--side phone--left"><img src="assets/screens/forked-home.jpg" alt="Forked home screen with Start a group and Join with a code" loading="lazy" width="600" height="1304"></figure>
-          <figure class="phone phone--side phone--right"><img src="assets/screens/forked-match.jpg" alt="It's a match screen showing the restaurant everyone liked" loading="lazy" width="600" height="1304"></figure>
-          <figure class="phone phone--center"><img src="assets/screens/forked-swipe.jpg" alt="Swiping on a restaurant card for Dirt Cowboy Cafe" loading="lazy" width="600" height="1304"></figure>
+          <figure class="phone phone--side phone--left"><img src="assets/screens/forked-home.jpg" alt="Forked home screen with Start a group and Join with a code" loading="lazy" width="900" height="1956"></figure>
+          <figure class="phone phone--side phone--right"><img src="assets/screens/forked-match.jpg" alt="It's a match screen showing the restaurant everyone liked" loading="lazy" width="900" height="1956"></figure>
+          <figure class="phone phone--center"><img src="assets/screens/forked-swipe.jpg" alt="Swiping on a restaurant card for Dirt Cowboy Cafe" loading="lazy" width="900" height="1956"></figure>
         </div>
       </div>
     </section>
@@ -177,43 +177,26 @@
       </div>
     </section>
 
-    <!-- Approach -->
-    <section class="approach wrap" id="approach" aria-labelledby="approach-title">
-      <p class="eyebrow">Approach</p>
-      <h2 id="approach-title">How I make apps</h2>
-      <div class="principles">
-        <article class="reveal">
-          <span class="principle__num">01</span>
-          <h3>Designed end to end</h3>
-          <p>Every screen, icon and website is made by me, from the first sketch to the App Store listing.</p>
-        </article>
-        <article class="reveal">
-          <span class="principle__num">02</span>
-          <h3>Private by default</h3>
-          <p>No accounts where they aren't needed. Forked and Frutiger Sports connect phones directly and keep your data on your device.</p>
-        </article>
-        <article class="reveal">
-          <span class="principle__num">03</span>
-          <h3>Made for real moments</h3>
-          <p>A clear night, dinner with friends, a game on the couch. Each app starts from something people actually do.</p>
-        </article>
-      </div>
-    </section>
-
     <!-- Contact -->
     <section class="contact wrap" id="contact" aria-labelledby="contact-title">
       <div class="contact__card reveal">
         <div>
           <h2 id="contact-title">Say hello</h2>
-          <p>Questions, bug reports or ideas for what to build next? I read every email.</p>
+          <p>Questions, bug reports or ideas for what to build next? Email me or connect on LinkedIn.</p>
         </div>
-        <a class="btn btn--primary btn--lg" href="mailto:universe@kportal.net">universe@kportal.net</a>
+        <div class="contact__actions">
+          <a class="btn btn--primary btn--lg" href="mailto:universe@kportal.net">universe@kportal.net</a>
+          <a class="btn btn--outline btn--lg" href="https://www.linkedin.com/in/harrisonkiser/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="foot wrap">
-    <p>© <span id="year">2026</span> Kportal</p>
+    <p class="foot__brand"><img src="assets/logo.svg" alt="" width="20" height="20"><span>© <span id="year">2026</span> Kportal · <a href="https://www.linkedin.com/in/harrisonkiser/" target="_blank" rel="noopener">LinkedIn</a></span></p>
     <nav aria-label="App websites">
       <a href="https://www.space.kportal.net">space.kportal.net</a>
       <a href="https://www.forked.kportal.net">forked.kportal.net</a>
