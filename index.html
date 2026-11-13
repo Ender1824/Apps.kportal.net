@@ -4,114 +4,239 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kportal Apps</title>
-  <meta name="description" content="iPhone apps by Kportal: Universe Daily, Forked and Frutiger Sports.">
+  <meta name="description" content="Apps for iPhone by Kportal: Universe Daily, Forked and Frutiger Sports.">
+  <meta property="og:title" content="Kportal Apps">
+  <meta property="og:description" content="Apps for iPhone about space, food and play: Universe Daily, Forked and Frutiger Sports.">
+  <meta property="og:image" content="assets/screens/fs-home.jpg">
+  <meta name="theme-color" content="#0c0d10">
   <link rel="icon" href="assets/universe-daily.png">
+  <link rel="apple-touch-icon" href="assets/universe-daily.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="top">
-    <a class="brand" href="/">Kportal</a>
-    <nav>
-      <a href="#universe-daily">Universe Daily</a>
-      <a href="#forked">Forked</a>
-      <a href="#frutiger-sports">Frutiger Sports</a>
-    </nav>
+    <div class="wrap top__inner">
+      <a class="brand" href="#top" aria-label="Kportal, back to top">
+        <span class="brand__mark" aria-hidden="true"></span>Kportal
+      </a>
+      <nav aria-label="Primary">
+        <a href="#apps">Apps</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Apps for iPhone</p>
-      <h1>Small apps, made with care.</h1>
-      <p class="lede">I design and build iOS apps on my own. Here's what I've made so far: one out on the App Store, two on the way.</p>
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero wrap">
+      <p class="eyebrow">Independent iOS developer</p>
+      <h1>Thoughtful apps for iPhone,<br class="br-wide"> designed and built end&nbsp;to&nbsp;end.</h1>
+      <p class="lede">I make apps about space, food and play. One is on the App Store and two are on the way, each with its own look and its own idea of fun.</p>
+
+      <ul class="index" id="apps" aria-label="Apps">
+        <li>
+          <a class="index__card" href="#universe-daily">
+            <img src="assets/universe-daily.png" alt="" width="64" height="64">
+            <span class="index__text">
+              <strong>Universe Daily</strong>
+              <span>Space, every day</span>
+            </span>
+            <span class="pill pill--live">Live</span>
+          </a>
+        </li>
+        <li>
+          <a class="index__card" href="#forked">
+            <img src="assets/forked.png" alt="" width="64" height="64">
+            <span class="index__text">
+              <strong>Forked</strong>
+              <span>Decide where to eat</span>
+            </span>
+            <span class="pill">Testing</span>
+          </a>
+        </li>
+        <li>
+          <a class="index__card" href="#frutiger-sports">
+            <img src="assets/frutiger-sports.png" alt="" width="64" height="64">
+            <span class="index__text">
+              <strong>Frutiger Sports</strong>
+              <span>Motion sports games</span>
+            </span>
+            <span class="pill">Soon</span>
+          </a>
+        </li>
+      </ul>
     </section>
 
-    <section class="apps">
-      <!-- Universe Daily -->
-      <article class="app app--space" id="universe-daily">
-        <div class="app__media">
-          <img class="app__icon" src="assets/universe-daily.png" alt="Universe Daily app icon" width="512" height="512">
-        </div>
-        <div class="app__body">
-          <div class="app__meta">
-            <span class="status status--live">On the App Store</span>
-            <span class="tag">Astronomy</span>
+    <!-- Universe Daily -->
+    <section class="app app--space" id="universe-daily" aria-labelledby="ud-title">
+      <div class="wrap app__grid">
+        <div class="app__copy reveal">
+          <div class="app__head">
+            <img class="app__icon" src="assets/universe-daily.png" alt="Universe Daily app icon" width="72" height="72">
+            <div>
+              <h2 id="ud-title">Universe Daily</h2>
+              <p class="app__meta"><span class="dot dot--live"></span>On the App Store · Free · Education</p>
+            </div>
           </div>
-          <h2>Universe Daily</h2>
-          <p class="app__pitch">Your daily look at space: NASA's Astronomy Picture of the Day, live sky data and the latest space news, all in one place.</p>
+          <p class="app__tagline">The universe, daily.</p>
+          <p class="app__desc">A daily window into space: NASA's Astronomy Picture of the Day, live data on who and what is in orbit, and the launches, eclipses and news worth looking up for. Plus space games like Constellation Quiz and Cosmic Cipher.</p>
           <ul class="features">
-            <li>Astronomy Picture of the Day</li>
-            <li>Live ISS tracker and people in space</li>
-            <li>Upcoming launches and eclipses</li>
-            <li>Night sky conditions</li>
-            <li>Home Screen widget</li>
+            <li><strong>Picture of the Day</strong><span>A new image from NASA every morning.</span></li>
+            <li><strong>ISS Tracker</strong><span>The ISS and Tiangong on a live 3D globe.</span></li>
+            <li><strong>People in Space</strong><span>Who's in orbit now, and every astronaut ever.</span></li>
+            <li><strong>Upcoming Launches</strong><span>Launches worldwide, with live countdowns.</span></li>
+            <li><strong>Night Sky</strong><span>Dark skies, aurora forecast and the Moon.</span></li>
+            <li><strong>Eclipses</strong><span>Every solar and lunar eclipse through 2050.</span></li>
           </ul>
           <div class="actions">
-            <a class="btn btn--primary" href="https://apps.apple.com/us/app/universe-daily/id6751823874">Download on the App Store</a>
-            <a class="btn" href="https://www.space.kportal.net">Visit website</a>
+            <a class="btn btn--primary" href="https://apps.apple.com/us/app/universe-daily/id6751823874">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.62c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.89 1.15 9.14.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.39-.92-2.41-3.66zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.1 1.76-.96 2.79 1.01.08 2.05-.51 2.68-1.27z"/></svg>
+              Download on the App Store
+            </a>
+            <a class="btn btn--ghost" href="https://www.space.kportal.net">Visit website <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-      </article>
+        <div class="phones reveal" aria-label="Universe Daily screenshots">
+          <figure class="phone phone--side phone--left"><img src="assets/screens/ud-explore.jpg" alt="Explore tab with People in Space, ISS Tracker, launches and eclipses" loading="lazy" width="600" height="1304"></figure>
+          <figure class="phone phone--side phone--right"><img src="assets/screens/ud-launches.jpg" alt="Launch calendar with a countdown to the next launch" loading="lazy" width="600" height="1304"></figure>
+          <figure class="phone phone--center"><img src="assets/screens/ud-today.jpg" alt="Today tab showing the Astronomy Picture of the Day" loading="lazy" width="600" height="1304"></figure>
+        </div>
+      </div>
+    </section>
 
-      <!-- Forked -->
-      <article class="app app--forked" id="forked">
-        <div class="app__media">
-          <img class="app__icon" src="assets/forked.png" alt="Forked app icon" width="256" height="256">
-        </div>
-        <div class="app__body">
-          <div class="app__meta">
-            <span class="status">Coming soon</span>
-            <span class="tag">Food &amp; Drink</span>
+    <!-- Forked -->
+    <section class="app app--forked app--flip" id="forked" aria-labelledby="forked-title">
+      <div class="wrap app__grid">
+        <div class="app__copy reveal">
+          <div class="app__head">
+            <img class="app__icon" src="assets/forked.png" alt="Forked app icon" width="72" height="72">
+            <div>
+              <h2 id="forked-title">Forked</h2>
+              <p class="app__meta"><span class="dot"></span>In testing · Coming soon to iPhone · Food &amp; Drink</p>
+            </div>
           </div>
-          <h2>Forked</h2>
-          <p class="app__pitch">Swipe to decide where to eat, together. Start a group, everyone swipes the same deck of nearby restaurants or dishes, and when you all like the same one, it's a match.</p>
+          <p class="app__tagline">Where should we eat? Swipe on it.</p>
+          <p class="app__desc">Forked turns the “what do you want?” debate into a quick game. Start a group, everyone swipes on local spots, and the place you all like wins.</p>
+          <dl class="stats">
+            <div><dt>400+</dt><dd>hand-checked spots</dd></div>
+            <div><dt>36</dt><dd>towns in NH &amp; VT</dd></div>
+            <div><dt>2–8</dt><dd>friends per group</dd></div>
+          </dl>
           <ul class="features">
-            <li>Groups of 2–8 with a 4-character code</li>
-            <li>Swipe on restaurants or on cravings</li>
-            <li>Works phone-to-phone, no account or server</li>
-            <li>Hand-picked guide to 400+ Upper Valley spots</li>
-            <li>Directions, call and website for every match</li>
+            <li><strong>Restaurants or cravings</strong><span>Swipe on places, or on what you feel like eating.</span></li>
+            <li><strong>No sign-ups</strong><span>Share a four-letter code and you're in.</span></li>
+            <li><strong>Phones talk directly</strong><span>Groups connect nearby, with no server in between.</span></li>
+            <li><strong>Hours, menus, directions</strong><span>Everything you need once you match.</span></li>
           </ul>
           <div class="actions">
-            <a class="btn btn--primary" href="https://www.forked.kportal.net">Visit website</a>
+            <a class="btn btn--primary" href="https://www.forked.kportal.net">Visit website <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-      </article>
+        <div class="phones reveal" aria-label="Forked screenshots">
+          <figure class="phone phone--side phone--left"><img src="assets/screens/forked-home.jpg" alt="Forked home screen with Start a group and Join with a code" loading="lazy" width="600" height="1304"></figure>
+          <figure class="phone phone--side phone--right"><img src="assets/screens/forked-match.jpg" alt="It's a match screen showing the restaurant everyone liked" loading="lazy" width="600" height="1304"></figure>
+          <figure class="phone phone--center"><img src="assets/screens/forked-swipe.jpg" alt="Swiping on a restaurant card for Dirt Cowboy Cafe" loading="lazy" width="600" height="1304"></figure>
+        </div>
+      </div>
+    </section>
 
-      <!-- Frutiger Sports -->
-      <article class="app app--aero" id="frutiger-sports">
-        <div class="app__media">
-          <img class="app__icon" src="https://www.frutigersports.kportal.net/assets/icon-512.png" alt="Frutiger Sports app icon" width="512" height="512">
-        </div>
-        <div class="app__body">
-          <div class="app__meta">
-            <span class="status">Coming soon</span>
-            <span class="tag">Sports &amp; Games</span>
+    <!-- Frutiger Sports -->
+    <section class="app app--aero" id="frutiger-sports" aria-labelledby="fs-title">
+      <div class="wrap app__grid">
+        <div class="app__copy reveal">
+          <div class="app__head">
+            <img class="app__icon" src="assets/frutiger-sports.png" alt="Frutiger Sports app icon" width="72" height="72">
+            <div>
+              <h2 id="fs-title">Frutiger Sports</h2>
+              <p class="app__meta"><span class="dot"></span>Coming soon to the App Store · Sports games</p>
+            </div>
           </div>
-          <h2>Frutiger Sports</h2>
-          <p class="app__pitch">Swing your phone, play the sport. Your iPhone becomes the paddle, the club, the ball and the bow, in a sunny, glossy Frutiger Aero world.</p>
+          <p class="app__tagline">Swing your phone. Play the sport.</p>
+          <p class="app__desc">Table tennis, golf, bowling and archery in a sunny, glossy world, where your iPhone is the paddle, the club, the ball and the bow. Every game reads the angle, speed and twist of your wrist.</p>
           <ul class="features">
-            <li>Table Tennis</li>
-            <li>Golf</li>
-            <li>Bowling</li>
-            <li>Archery</li>
-            <li>Play with friends nearby</li>
-            <li>Private by design</li>
+            <li><strong>Table Tennis</strong><span>Brush for topspin, chop to slice, twist to curve.</span></li>
+            <li><strong>Golf</strong><span>Turn your wrist to hook or slice, and read the wind.</span></li>
+            <li><strong>Bowling</strong><span>Grip, swing and release. Twist to hook it.</span></li>
+            <li><strong>Archery</strong><span>Draw back, hold steady, allow for drop and wind.</span></li>
+            <li><strong>Play Nearby</strong><span>Two iPhones on the same Wi‑Fi, head to head.</span></li>
+            <li><strong>Private by design</strong><span>No accounts, no ads, no tracking.</span></li>
           </ul>
           <div class="actions">
-            <a class="btn btn--primary" href="https://www.frutigersports.kportal.net">Visit website</a>
+            <a class="btn btn--primary" href="https://www.frutigersports.kportal.net">Visit website <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-      </article>
+        <div class="phones reveal" aria-label="Frutiger Sports screenshots">
+          <figure class="phone phone--side phone--left"><img src="assets/screens/fs-tabletennis.jpg" alt="Table tennis match against the computer" loading="lazy" width="600" height="1304"></figure>
+          <figure class="phone phone--side phone--right"><img src="assets/screens/fs-bowling.jpg" alt="Bowling lane with pins and the ball lined up" loading="lazy" width="600" height="1304"></figure>
+          <figure class="phone phone--center"><img src="assets/screens/fs-home.jpg" alt="Choose a sport screen with Table Tennis, Golf, Bowling and Archery" loading="lazy" width="600" height="1304"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="approach wrap" id="approach" aria-labelledby="approach-title">
+      <p class="eyebrow">Approach</p>
+      <h2 id="approach-title">How I make apps</h2>
+      <div class="principles">
+        <article class="reveal">
+          <span class="principle__num">01</span>
+          <h3>Designed end to end</h3>
+          <p>Every screen, icon and website is made by me, from the first sketch to the App Store listing.</p>
+        </article>
+        <article class="reveal">
+          <span class="principle__num">02</span>
+          <h3>Private by default</h3>
+          <p>No accounts where they aren't needed. Forked and Frutiger Sports connect phones directly and keep your data on your device.</p>
+        </article>
+        <article class="reveal">
+          <span class="principle__num">03</span>
+          <h3>Made for real moments</h3>
+          <p>A clear night, dinner with friends, a game on the couch. Each app starts from something people actually do.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact__card reveal">
+        <div>
+          <h2 id="contact-title">Say hello</h2>
+          <p>Questions, bug reports or ideas for what to build next? I read every email.</p>
+        </div>
+        <a class="btn btn--primary btn--lg" href="mailto:universe@kportal.net">universe@kportal.net</a>
+      </div>
     </section>
   </main>
 
-  <footer class="foot">
+  <footer class="foot wrap">
     <p>© <span id="year">2026</span> Kportal</p>
-    <p><a href="https://www.space.kportal.net">space.kportal.net</a> · <a href="https://www.forked.kportal.net">forked.kportal.net</a> · <a href="https://www.frutigersports.kportal.net">frutigersports.kportal.net</a></p>
+    <nav aria-label="App websites">
+      <a href="https://www.space.kportal.net">space.kportal.net</a>
+      <a href="https://www.forked.kportal.net">forked.kportal.net</a>
+      <a href="https://www.frutigersports.kportal.net">frutigersports.kportal.net</a>
+    </nav>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        els.forEach(function (el) { el.classList.add('is-in'); });
+        return;
+      }
+      document.documentElement.classList.add('js-reveal');
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 </body>
 </html>
