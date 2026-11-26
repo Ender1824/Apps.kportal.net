@@ -70,6 +70,16 @@
   --aero-on-accent: #ffffff;
   --aero-mark: #1e7fe0;
 
+  /* MovieMatch: dark theater, marquee gold (same in light and dark mode) */
+  --movie-bg: radial-gradient(ellipse 70% 55% at 50% 0%, rgba(240, 190, 90, 0.22), transparent 70%),
+    linear-gradient(160deg, #1a0a0d 0%, #0d0809 55%, #2a0710 100%);
+  --movie-text: #f3ece0;
+  --movie-muted: #c4b8a6;
+  --movie-line: rgba(240, 196, 98, 0.18);
+  --movie-accent: #f0c462;
+  --movie-on-accent: #1a0d05;
+  --movie-mark: #f0c462;
+
   --radius-xl: 32px;
   --radius: 18px;
   --wrap: 1180px;
@@ -204,7 +214,7 @@ h1, h2, h3 {
 
 .index {
   list-style: none; padding: 0; margin: 56px 0 0;
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 860px;
 }
 .index__card {
   display: flex; align-items: center; gap: 14px;
@@ -296,6 +306,7 @@ h1, h2, h3 {
 .app + .app { margin-top: 0; }
 .app--space  { --band-bg: var(--space-bg);  --band-text: var(--space-text);  --band-muted: var(--space-muted);  --band-line: var(--space-line);  --band-accent: var(--space-accent);  --band-on-accent: var(--space-on-accent);  --band-mark: var(--space-mark); }
 .app--forked { --band-bg: var(--forked-bg); --band-text: var(--forked-text); --band-muted: var(--forked-muted); --band-line: var(--forked-line); --band-accent: var(--forked-accent); --band-on-accent: var(--forked-on-accent); --band-mark: var(--forked-mark); }
+.app--movie  { --band-bg: var(--movie-bg);  --band-text: var(--movie-text);  --band-muted: var(--movie-muted);  --band-line: var(--movie-line);  --band-accent: var(--movie-accent);  --band-on-accent: var(--movie-on-accent);  --band-mark: var(--movie-mark); }
 .app--aero   { --band-bg: var(--aero-bg);   --band-text: var(--aero-text);   --band-muted: var(--aero-muted);   --band-line: var(--aero-line);   --band-accent: var(--aero-accent);   --band-on-accent: var(--aero-on-accent);   --band-mark: var(--aero-mark); }
 
 .app__grid {
